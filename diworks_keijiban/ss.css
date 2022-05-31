@@ -1,0 +1,98 @@
+p img{
+    height: 100px;
+    margin-left: 45px;
+    
+}
+header{
+    width: 93%;
+    height: 40px;
+    background-color: black;
+    margin-left: 45px;
+}
+header ul li{
+    float: left;
+    list-style: none;
+    padding-left: 20px;
+    color: white;
+    line-height: 40px;
+}
+main{
+    clear: left;
+}
+.main-a{
+    width:100%;
+    margin: 0 auto;margin-top: 10px;margin-left: 10px;
+}
+h1{
+    margin-left: 39px;
+    margin-top: 1px;
+    border-left: solid 5px black;
+    border-bottom:solid 3px black;
+    width: 89%;
+}
+.left{
+    float: left;
+    width:65%;
+    height: 1200px;
+    margin-bottom: -30px;
+}
+form{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px #ebebeb solid;
+    border-radius: 1px;
+    width: 91%;
+    margin-top: 6px;
+}
+
+form div{
+    padding: 15px;
+}
+.submit{
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+}
+h2{
+    border-left: solid 5px red;
+}
+h3{
+    font-size: 25px;
+    margin-top: 15px;
+    border-bottom: solid 2px lightgrey;
+    width: 750px;
+}
+p1{
+    font-size: 12px;
+}
+.right{
+    float: left;
+    width:30%;
+    height: 1200px;
+    margin-bottom: 45px;
+    margin-top: 40px;
+} 
+.right .a{
+    font-size: 18px;
+    border-bottom: dotted 3px lightgray;
+    width: 85%;
+}
+.a p{
+    left: 35px;
+}
+footer{
+    clear: left;
+    width: 93%;
+    height: 60px;
+    /* position: absolute; */
+    bottom: 0px;
+    /* left: 45px; */
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 45px;
+}
