@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>デバック</title>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+            function toOneDimension( $previousValue, $currentValue ) {
+                console.log($previousValue);
+                console.log($currentValue);
+                console.log($currentValue.concat($previousValue));
+                return $currentValue.concat($previousValue );
+            }
+            var $sampleArrayA = [
+                [ 'A1', 'A2', 'A3' ],
+                [ 'B1', 'B2', 'B3' ],
+                [ 'C1', 'C2', 'C3' ]
+            ];
+            // $sampleArrayA.reverse();
+            var $sampleArrayB = $sampleArrayA.reduce( toOneDimension );
+            for ( var $counterVar = 0; $counterVar < $sampleArrayB.length; $counterVar++ ) {
+                document.write( '$sampleArrayB[' +$counterVar +']: ' );
+                document.write( $sampleArrayB[$counterVar] );
+                document.write( '<br />' );
+                // console.log($sampleArrayB[$counterVar]);
+            }
+        </script>
+
+    </body>
+</html>
