@@ -26,48 +26,48 @@
             <form method="post" action="di3.php">
                 <div>
                     <label>名前(姓)</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="[\u4E00-\u9FFF\u3040-\u309F-]*">
+                    <input type="text" class="text" size="35" maxlength="10" name="last name" pattern="[\u4E00-\u9FFF\u3040-\u309F-]*">
                 </div>
 
                 <div>
                     <label>名前(名)</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="[\u4E00-\u9FFF\u3040-\u309F-]*">
+                    <input type="text" class="text" size="35" maxlength="10" name="first name" pattern="[\u4E00-\u9FFF\u3040-\u309F-]*">
                 </div>
 
                 <div>
                     <label>カナ(姓)</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="[\u30A1-\u30F6]*">
+                    <input type="text" class="text" size="35" maxlength="10" name="kana last" pattern="[\u30A1-\u30F6]*">
                 </div>
 
                 <div>
                     <label>カナ(名)</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="[\u30A1-\u30F6]*">
+                    <input type="text" class="text" size="35" maxlength="10" name="kana first" pattern="[\u30A1-\u30F6]*">
                 </div>
 
                 <div>
                     <label>メールアドレス</label>
-                    <input type="text" class="text" size="35" maxlength="100" pattern="">
+                    <input type="text" class="text" size="35" maxlength="100" name="mail" pattern="^[0-9A-Za-z-@]$">
                 </div>
 
                 <div>
                     <label>パスワード</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="^[0-9A-Za-z]+$">
+                    <input type="text" class="text" size="35" maxlength="10" name="pass" pattern="^[a-zA-Z0-9]+$">
                 </div>
 
                 <div>
                     <label>性別</label>
-                    <input type="radio">男
-                    <input type="radio">女
+                    <input type="radio" name="man">男
+                    <input type="radio" name="man">女
                 </div>
 
                 <div>
                     <label>郵便番号</label>
-                    <input type="text" class="text" size="35" maxlength="7" pattern="^[0-9]+$">
+                    <input type="text" class="text" size="35" maxlength="7" name="post code" pattern="^[0-9]+$">
                 </div>
 
                 <div>
                     <label>住所(都道府県)</label>
-                    <select>
+                    <select name="address">
                         <option value=""></option>
                         <option value="">北海道</option><option value="">青森</option><option value="">岩手</option><option value="">宮城</option>
                         <option value="">秋田</option><option value="">山形</option><option value="">福島</option><option value="">茨城</option>
@@ -86,17 +86,17 @@
 
                 <div>
                     <label>住所(市区町村)</label>
-                    <input type="text" class="text" size="35" maxlength="10" pattern="[-\u4E00-\u9FFF\u3040-\u309F-\uFF66-\uFF9F\u30A1-\u30F60-9 ０-９_\s]*">
+                    <input type="text" class="text" size="35" maxlength="10" name="municipalities" pattern="[-\u4E00-\u9FFF\u3040-\u309F-\uFF66-\uFF9F\u30A1-\u30F60-9 ０-９_\s]*">
                 </div>
 
                 <div>
                     <label>住所(番地)</label>
-                    <input type="text" class="text" size="35" maxlength="100" pattern="[-\u4E00-\u9FFF\u3040-\u309F-\uFF66-\uFF9F\u30A1-\u30F60-9 ０-９_\s]*">
+                    <input type="text" class="text" size="35" maxlength="100" name="banti" pattern="[-\u4E00-\u9FFF\u3040-\u309F-\uFF66-\uFF9F\u30A1-\u30F60-9 ０-９_\s]*">
                 </div>
 
                 <div>
                     <label>アカウント権限</label>
-                    <select>
+                    <select name="authority">
                         <option value="">一般</option>
                         <option value="">管理者</option>
                     </select>
